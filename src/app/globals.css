@@ -2,12 +2,40 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
-  font-family: Arial, Helvetica, sans-serif;
-}
-
 @layer base {
   :root {
     --radius: 0.5rem;
   }
+}
+
+@layer utilities {
+  * {
+    @apply font-dmSans;
+  }
+
+  h1,
+  h2,
+  h3 {
+    @apply font-poppins text-dark;
+  }
+
+  .txt {
+    @apply text-[16px] text-dark/70 leading-[25px];
+  }
+
+  .container {
+    @apply w-[90%] md:w-[80%] mx-auto;
+  }
+}
+
+.boxShadow {
+  box-shadow: 0 0 5px rgb(214, 214, 214);
+}
+
+.navlink .active {
+  @apply text-primary;
+}
+
+body {
+  background: rgb(247, 247, 247);
 }
