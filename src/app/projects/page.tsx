@@ -2,18 +2,10 @@ import { projects } from "@/lib/data";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
-import { Button } from "./ui/button";
 
 const Projects = () => {
   return (
-    <div className="container mt-[100px] max-sm:mt-[70px]">
-      <p className="text-primary font-pacifico text-[18px] text-center w-full">
-        Explore my amazing projects
-      </p>
-      <h2 className="font-extrabold mt-2 uppercase text-[40px] text-center  leading-[43px] max-md:text-[30px] w-full">
-        My projects
-      </h2>
-
+    <div className="container mt-[120px]">
       {/* projects */}
       <div className="mt-8 grid grid-cols-2 max-sm:grid-cols-1 gap-[40px]">
         {projects.map((i, key) => (
@@ -37,12 +29,6 @@ const Projects = () => {
             </div>
           </Link>
         ))}
-      </div>
-
-      <div className="flex justify-center mt-7">
-        <Button asChild>
-          <Link href={"/projects"}>Explore more</Link>
-        </Button>
       </div>
     </div>
   );

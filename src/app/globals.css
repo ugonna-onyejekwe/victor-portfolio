@@ -29,7 +29,7 @@
 }
 
 .boxShadow {
-  box-shadow: 0 0 5px rgb(214, 214, 214);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.171);
 }
 
 .navlink .active {

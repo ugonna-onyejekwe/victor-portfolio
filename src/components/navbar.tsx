@@ -1,52 +1,62 @@
+"use client";
+
 import Image from "next/image";
 import Link from "next/link";
-import React from "react";
-import { HiOutlineMenuAlt3 } from "react-icons/hi";
+import React, { useState } from "react";
+import { Button } from "./ui/button";
+import MobileNav from "./MobileNav";
+import { FiMenu } from "react-icons/fi";
+
+export const navList = [
+  {
+    name: "Home",
+    link: "#",
+  },
+  {
+    name: "about",
+    link: "#about",
+  },
+  {
+    name: "project",
+    link: "#project",
+  },
+];
 
 const Navbar = () => {
-  const navList = [
-    {
-      name: "Home",
-      link: "#",
-    },
-    {
-      name: "about",
-      link: "#about",
-    },
-    {
-      name: "project",
-      link: "#project",
-    },
-    {
-      name: "contact",
-      link: "#contact",
-    },
-  ];
+  const [openNav, setOpenNav] = useState(false);
 
   return (
-    <div className="left-0 right-0 fixed top-0 pt-3">
-      <div className="container  bg-white rounded-xl boxShadow flex justify-between items-center py-[20px] px-[20px] ">
-        <Link href={"#"}>
-          <Image src={"/logo.jpg"} height={30} width={40} alt="logo" />
-        </Link>
+    <>
+      <div className="left-0 right-0 fixed top-0  z-10 bg-white  boxShadow">
+        <div className="container   flex justify-between items-center py-[20px] px-[20px] ">
+          <Link href={"/"}>
+            <Image src={"/logo.jpg"} height={30} width={40} alt="logo" />
+          </Link>
 
-        <div className="flex items-center gap-10 max-md:hidden ">
-          {navList.map((i, key) => (
-            <Link
-              href={i.link}
-              key={key}
-              className="font-medium text-[16px] font-poppins capitalize text-dark/50 hover:text-dark navlink last:bg-primary last:text-white last:px-5 last:py-3 last:rounded-md last:text-[15px] last:hover:text-white"
-            >
-              {i.name}
-            </Link>
-          ))}
-        </div>
+          <div className="flex items-center gap-10 max-md:hidden ">
+            {navList.map((i, key) => (
+              <Link
+                href={i.link}
+                key={key}
+                className="font-medium text-[15px] font-poppins capitalize text-dark/50 hover:text-dark navlink "
+              >
+                {i.name}
+              </Link>
+            ))}
 
-        <div className="hidden max-md:block cursor-pointer">
-          <HiOutlineMenuAlt3 className="text-[23px]" />
+            <Button asChild className="h-[50px] px-5 font-medium font-poppins ">
+              <Link href="#contact">Contact me</Link>
+            </Button>
+          </div>
+
+          <div className="hidden max-md:block cursor-pointer">
+            <FiMenu className="text-[23px]" onClick={() => setOpenNav(true)} />
+          </div>
         </div>
       </div>
-    </div>
+
+      {openNav && <MobileNav open={openNav} onOpenChange={setOpenNav} />}
+    </>
   );
 };
 

@@ -1,20 +1,19 @@
 import React from "react";
+import Skills from "./Skills";
 
 const AboutMe = () => {
   return (
-    <div className="">
+    <div className="mt-[100px] max-sm:mt-[60px]">
       {/* about me */}
-      <div className=" container flex  items-center h-[600px] ">
-        <div className="w-[50%] bg-primary/5 h-full">
-          <h1 className="font-extrabold uppercase text-[50px] text-center w-fit leading-[43px]">
-            About
-            <br />
-            me
-          </h1>
-        </div>
+      <div className=" container flex  items-center h-[600px] max-md:flex-col-reverse max-md:h-fit">
+        <div className="w-[50%] bg-primary/5 h-full  bg-profile bg-center bg-contain max-md:hidden " />
 
         {/* details */}
-        <div className="txt flex flex-col gap-3 w-[50%]  pl-[50px]">
+        <div className="txt flex flex-col gap-3 w-full  pl-[50px] md:w-[50%]  max-md:pl-0 ">
+          <h1 className="font-extrabold uppercase text-[40px] text-center w-fit leading-[43px] max-md:text-[30px] mb-3">
+            About me
+          </h1>
+
           <p>
             "I'm a passionate UI/UX designer with expertise in Figma. I create
             user-friendly designs for web and mobile apps that make users' lives
@@ -42,6 +41,7 @@ const AboutMe = () => {
       </div>
 
       {/* skills */}
+      <Skills />
     </div>
   );
 };

@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Poppins, DM_Sans } from "next/font/google";
+import { Poppins, DM_Sans, Pacifico } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/navbar";
 import Footer from "@/components/Footer";
@@ -16,6 +16,12 @@ const dm_sans = DM_Sans({
   weight: ["400"],
 });
 
+const pacifico = Pacifico({
+  variable: "--font-pacifico",
+  subsets: ["latin"],
+  weight: ["400"],
+});
+
 export const metadata: Metadata = {
   title: "Nduka victor",
   description: "A creative UI/UX designer",
@@ -28,7 +34,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${poppins.variable} ${dm_sans.variable} antialiased`}>
+      <body
+        className={`${poppins.variable} ${dm_sans.variable} ${pacifico.variable} antialiased`}
+      >
         <Navbar />
 
         <div className="min-h-[100vh]">{children}</div>

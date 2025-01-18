@@ -24,6 +24,11 @@ export default {
       fontFamily: {
         poppins: "var(--font-poppins)",
         dmSans: "var(--font-dm_sans)",
+        pacifico: "var(--font-pacifico)",
+      },
+      backgroundImage: {
+        profile: "url(/victor.jpg)",
+        home_bg: "url(/home-bg.webp)",
       },
     },
   },
