@@ -19,7 +19,7 @@ const ProjectDetails = () => {
         </h1>
 
         <p className="flex flex-wrap items-center gap-3 font-pacifico text-primary mt-3">
-          Skills:
+          <span className="uppercase font-pacifico">Skills:</span>
           <span className=" text-[15px]">//figma</span>
           <span className=" text-[15px]">//protype</span>
         </p>
