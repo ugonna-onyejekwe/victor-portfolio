@@ -1,14 +1,14 @@
+"use client";
 import React from "react";
 import { projects } from "../../../lib/data";
 import { Button } from "../../../components/ui/button";
 import Link from "next/link";
 import Image from "next/image";
+import { useParams } from "next/navigation";
 
-const ProjectDetails = ({
-  params: { id },
-}: {
-  params: { id: Promise<string> };
-}) => {
+const ProjectDetails = () => {
+  const { id } = useParams<{ id: string }>();
+
   const project = projects.find((i) => i.id === Number(id));
 
   return (
