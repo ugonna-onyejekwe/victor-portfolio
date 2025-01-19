@@ -3,7 +3,7 @@ import Skills from "./Skills";
 
 const AboutMe = () => {
   return (
-    <div className="mt-[100px] max-sm:mt-[60px]">
+    <div className="mt-[100px] max-sm:mt-[60px]" id="about">
       {/* about me */}
       <div className=" container flex  items-center h-[600px] max-md:flex-col-reverse max-md:h-fit">
         <div className="w-[50%] bg-primary/5 h-full  bg-profile bg-center bg-contain max-md:hidden " />

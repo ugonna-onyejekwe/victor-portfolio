@@ -6,7 +6,7 @@ import { Button } from "./ui/button";
 
 const Projects = () => {
   return (
-    <div className="container mt-[100px] max-sm:mt-[70px]">
+    <div className="container mt-[100px] max-sm:mt-[70px]" id="projects">
       <p className="text-primary font-pacifico text-[18px] text-center w-full">
         Explore my amazing projects
       </p>

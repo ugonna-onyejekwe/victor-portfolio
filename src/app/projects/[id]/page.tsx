@@ -4,7 +4,11 @@ import { Button } from "../../../components/ui/button";
 import Link from "next/link";
 import Image from "next/image";
 
-const ProjectDetails = ({ params: { id } }: { params: { id: string } }) => {
+const ProjectDetails = ({
+  params: { id },
+}: {
+  params: { id: Promise<any> };
+}) => {
   const project = projects.find((i) => i.id === Number(id));
 
   return (
@@ -25,13 +29,33 @@ const ProjectDetails = ({ params: { id } }: { params: { id: string } }) => {
         </Button>
       </div>
 
-      <div className="txt mt-5">{project.desc1}</div>
-      <div classname="w-full h-fit bg-primary/10 pt-5">
+      <div className="txt mt-5 !leading-[35px]">{project?.desc1}</div>
+      <div className="w-full h-fit bg-primary/10 mt-5">
         <Image
-          src={project.image}
+          src={project?.image!}
           height={300}
           width={300}
-          alt={project.name}
+          alt={project?.name!}
+          className="size-full"
+        />
+      </div>
+      <div className="txt mt-5 !leading-[35px]">{project?.desc2}</div>
+      <div className="w-full h-fit bg-primary/10 mt-5">
+        <Image
+          src={project?.image!}
+          height={300}
+          width={300}
+          alt={project?.name!}
+          className="size-full"
+        />
+      </div>
+      <div className="txt mt-5 !leading-[35px]">{project?.desc3}</div>
+      <div className="w-full h-fit bg-primary/10 mt-5">
+        <Image
+          src={project?.image!}
+          height={300}
+          width={300}
+          alt={project?.name!}
           className="size-full"
         />
       </div>

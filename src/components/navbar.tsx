@@ -10,7 +10,7 @@ import { FiMenu } from "react-icons/fi";
 export const navList = [
   {
     name: "Home",
-    link: "#",
+    link: "#home",
   },
   {
     name: "about",
@@ -18,7 +18,7 @@ export const navList = [
   },
   {
     name: "project",
-    link: "#project",
+    link: "#projects",
   },
 ];
 

@@ -8,7 +8,10 @@ import { FaXTwitter } from "react-icons/fa6";
 
 const Home_section = () => {
   return (
-    <div className="flex h-[750px] items-center justify-between bg-home_bg bg-cover bg-center relative before:absolute before:size-full before:bg-[#043145]/70 before:z-[-1] z-[1] sm:h-screen">
+    <div
+      id="home"
+      className="flex h-[750px] items-center justify-between bg-home_bg bg-cover bg-center relative before:absolute before:size-full before:bg-[#043145]/70 before:z-[-1] z-[1] sm:h-screen"
+    >
       {/* txt */}
 
       <div className="container mt-[200px] max-md:mt-[150px]">

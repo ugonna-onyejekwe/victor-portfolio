@@ -39,3 +39,8 @@
 body {
   background: rgb(247, 247, 247);
 }
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 150px;
+}

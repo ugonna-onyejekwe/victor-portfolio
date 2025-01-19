@@ -7,7 +7,7 @@ import { IoMdMailUnread } from "react-icons/io";
 
 const Footer = () => {
   return (
-    <div className="mt-[100px] max-md:mt-[80px]">
+    <div className="mt-[100px] max-md:mt-[80px]" id="contact">
       <div className="bg-[#e5ecec] py-20">
         <div className="container">
           <h1 className="font-extrabold text-center text-[40px] max-md:text-[30px] uppercase">
