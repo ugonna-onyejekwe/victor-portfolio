@@ -7,7 +7,7 @@ import Image from "next/image";
 const ProjectDetails = ({
   params: { id },
 }: {
-  params: { id: Promise<any> };
+  params: { id: Promise<string> };
 }) => {
   const project = projects.find((i) => i.id === Number(id));
 
