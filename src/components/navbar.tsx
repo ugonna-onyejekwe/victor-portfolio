@@ -6,6 +6,7 @@ import React, { useState } from "react";
 import { Button } from "./ui/button";
 import MobileNav from "./MobileNav";
 import { FiMenu } from "react-icons/fi";
+import { usePathname } from "next/navigation";
 
 export const navList = [
   {
@@ -24,7 +25,7 @@ export const navList = [
 
 const Navbar = () => {
   const [openNav, setOpenNav] = useState(false);
-
+  const path = usePathname();
   return (
     <>
       <div className="left-0 right-0 fixed top-0  z-10 bg-white  boxShadow">
@@ -36,7 +37,7 @@ const Navbar = () => {
           <div className="flex items-center gap-10 max-md:hidden ">
             {navList.map((i, key) => (
               <Link
-                href={i.link}
+                href={path !== "/" ? `/${i.link}` : i.link}
                 key={key}
                 className="font-medium text-[15px] font-poppins capitalize text-dark/50 hover:text-dark navlink "
               >

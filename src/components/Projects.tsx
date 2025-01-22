@@ -20,10 +20,10 @@ const Projects = () => {
           <Link href={`projects/${i.id}`} key={key}>
             <div className="bg-primary/5 w-full aspect-[2/1.5]  overflow-hidden ">
               <Image
-                height={300}
-                width={300}
+                height={1000}
+                width={1000}
                 alt={i.name}
-                src={i.image}
+                src={i.image.pro1}
                 className="size-full"
               />
             </div>

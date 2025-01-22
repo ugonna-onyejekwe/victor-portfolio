@@ -13,7 +13,7 @@ const ProjectDetails = () => {
 
   return (
     <div className="container">
-      <div className="h-[500px] w-full bg-primary/10 mt-[100px] flex  flex-col items-center justify-center">
+      <div className="h-[500px] w-full bg-primary/10 mt-[100px] flex  flex-col items-center justify-center p-3">
         <h1 className="font-extrabold text-center text-[50px] max-sm:text-[40px] capitalize">
           {project?.name}
         </h1>
@@ -32,33 +32,29 @@ const ProjectDetails = () => {
       <div className="txt mt-5 !leading-[35px]">{project?.desc1}</div>
       <div className="w-full h-fit bg-primary/10 mt-5">
         <Image
-          src={project?.image!}
-          height={300}
-          width={300}
+          src={project?.image.pro1!}
+          height={1500}
+          width={15000}
           alt={project?.name!}
           className="size-full"
         />
       </div>
-      <div className="txt mt-5 !leading-[35px]">{project?.desc2}</div>
-      <div className="w-full h-fit bg-primary/10 mt-5">
-        <Image
-          src={project?.image!}
-          height={300}
-          width={300}
-          alt={project?.name!}
-          className="size-full"
-        />
-      </div>
-      <div className="txt mt-5 !leading-[35px]">{project?.desc3}</div>
-      <div className="w-full h-fit bg-primary/10 mt-5">
-        <Image
-          src={project?.image!}
-          height={300}
-          width={300}
-          alt={project?.name!}
-          className="size-full"
-        />
-      </div>
+
+      {project?.image.pro2 && (
+        <>
+          <div className="txt mt-5 !leading-[35px]">{project?.desc2}</div>
+
+          <div className="w-full h-fit bg-primary/10 mt-5">
+            <Image
+              src={project?.image.pro2!}
+              height={1500}
+              width={1500}
+              alt={project?.name!}
+              className="size-full"
+            />
+          </div>
+        </>
+      )}
     </div>
   );
 };
