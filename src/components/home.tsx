@@ -27,14 +27,19 @@ const Home_section = () => {
         </p>
 
         <div className="mt-6 flex justify-center">
-          <Button className="hover:bg-white hover:text-dark w-full max-w-[200px] text-[15px] ">
-            Hire me
+          <Button
+            className="hover:bg-white hover:text-dark w-full max-w-[200px] text-[15px]  "
+            asChild
+          >
+            <a href="mailto:ndukacosmas1@gmail.com" target="_blank">
+              Hire me
+            </a>
           </Button>
         </div>
 
         <div className="flex items-center justify-center mt-12 gap-10">
           <Link
-            href="#"
+            href={"https://www.instagram.com/victor__nduka/"}
             target="_blank"
             className="text-white text-[25px] hover:text-primary"
           >
@@ -50,7 +55,7 @@ const Home_section = () => {
           </Link>
 
           <Link
-            href="#"
+            href={"http://x.com/@Victor__Nduka"}
             target="_blank"
             className="text-white text-[20px] hover:text-primary"
           >
@@ -58,7 +63,7 @@ const Home_section = () => {
           </Link>
 
           <Link
-            href="#"
+            href="mailto:ndukacosmas1@gmail.com"
             target="_blank"
             className="text-white text-[24px] hover:text-primary"
           >

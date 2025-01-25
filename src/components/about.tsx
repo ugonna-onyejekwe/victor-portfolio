@@ -1,5 +1,6 @@
 import React from "react";
 import Skills from "./Skills";
+import Link from "next/link";
 
 const AboutMe = () => {
   return (
@@ -34,9 +35,11 @@ const AboutMe = () => {
             into valued customers.
           </p>
 
-          <button className="w-fit mt-3 hover:text-primary font-bold relative before:absolute before:w-[100px] before:h-[1px] before:bg-primary before:top-[50%]  before:translate-y-[-50%] before:left-[70px] ">
-            Hire me{" "}
-          </button>
+          <Link href="mailto:ndukacosmas1@gmail.com">
+            <button className="w-fit mt-3 hover:text-primary font-bold relative before:absolute before:w-[100px] before:h-[1px] before:bg-primary before:top-[50%]  before:translate-y-[-50%] before:left-[70px] ">
+              Hire me{" "}
+            </button>
+          </Link>
         </div>
       </div>
 

@@ -23,7 +23,7 @@ const Projects = () => {
                 height={1000}
                 width={1000}
                 alt={i.name}
-                src={i.image.pro1}
+                src={i.image}
                 className="size-full"
               />
             </div>
@@ -31,9 +31,7 @@ const Projects = () => {
             {/* txt */}
             <div className="mt-4 ">
               <h2 className="font-bold text-[20px] capitalize">{i.name}</h2>
-              <p className="txt mt-2">
-                {i.desc1.length > 100 ? i.desc1.slice(0, 100) + "..." : i.desc1}
-              </p>
+              <p className="txt mt-2">{i.desc}</p>
             </div>
           </Link>
         ))}

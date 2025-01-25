@@ -16,8 +16,8 @@ const Footer = () => {
 
           <div className="flex flex-wrap gap-7 justify-center mt-8  items-center max-sm:gap-3 max-sm:mt-5">
             <Link
-              href=""
-              className="flex-1 flex items-center gap-4 text-center border border-dark/50  p-5 px-7 rounded-full font-bold hover:border-primary hover:text-primary max-w-[300px] max-sm:max-w-full justify-center whitespace-nowrap  max-sm:py-4"
+              href="mailto:ndukacosmas1@gmail.com"
+              className="flex-1 flex items-center gap-4  max-sm:py-4 text-center border border-dark/50  p-5 px-7  rounded-full font-semibold hover:border-primary hover:bg-primary hover:text-white max-w-[300px] max-sm:max-w-full justify-center whitespace-nowrap"
             >
               Write a message
               <span className=" text-[25px]">
@@ -25,8 +25,8 @@ const Footer = () => {
               </span>
             </Link>
             <Link
-              href=""
-              className="flex-1 flex items-center gap-4  max-sm:py-4 text-center border border-dark/50  p-5 px-7  rounded-full font-bold hover:border-primary hover:text-primary max-w-[300px] max-sm:max-w-full justify-center whitespace-nowrap "
+              href={`https://wa.me/08104038366`}
+              className="flex-1 flex items-center gap-4  max-sm:py-4 text-center border border-dark/50  p-5 px-7  rounded-full font-semibold hover:border-primary hover:bg-primary hover:text-white max-w-[300px] max-sm:max-w-full justify-center whitespace-nowrap "
             >
               {" "}
               Discuss project
@@ -39,6 +39,7 @@ const Footer = () => {
           <div className="mt-16 grid grid-cols-4 gap-12 max-sm:grid-cols-2">
             <Link
               href={"#"}
+              target="_blank"
               className="flex items-center gap-3 justify-between border-b  border-dark/50 pb-1 hover:border-primary  hover:text-primary"
             >
               <span className=" font-bold text-[15px]">Linkedin</span>
@@ -47,7 +48,8 @@ const Footer = () => {
             </Link>
 
             <Link
-              href={"#"}
+              href={"http://x.com/@Victor__Nduka"}
+              target="_blank"
               className="flex items-center gap-3 justify-between border-b  border-dark/50 pb-1 hover:border-primary  hover:text-primary"
             >
               <span className=" font-bold text-[15px]">Twitter</span>
@@ -56,7 +58,8 @@ const Footer = () => {
             </Link>
 
             <Link
-              href={"#"}
+              href={"https://www.instagram.com/victor__nduka/"}
+              target="_blank"
               className="flex items-center gap-3 justify-between border-b  border-dark/50 pb-1 hover:border-primary  hover:text-primary"
             >
               <span className=" font-bold text-[15px]">Instagram</span>
@@ -65,7 +68,8 @@ const Footer = () => {
             </Link>
 
             <Link
-              href={"#"}
+              href={"tel:+2348104038366"}
+              target="_blank"
               className="flex items-center gap-3 justify-between border-b  border-dark/50 pb-1 hover:border-primary  hover:text-primary"
             >
               <span className=" font-bold text-[15px]">Call me</span>
