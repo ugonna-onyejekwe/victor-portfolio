@@ -25,7 +25,7 @@ const Footer = () => {
               </span>
             </Link>
             <Link
-              href={`https://wa.me/08104038366`}
+              href={`https://wa.me/+2348104038366`}
               className="flex-1 flex items-center gap-4  max-sm:py-4 text-center border border-dark/50  p-5 px-7  rounded-full font-semibold hover:border-primary hover:bg-primary hover:text-white max-w-[300px] max-sm:max-w-full justify-center whitespace-nowrap "
             >
               {" "}
