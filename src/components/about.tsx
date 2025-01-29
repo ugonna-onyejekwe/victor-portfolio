@@ -35,9 +35,9 @@ const AboutMe = () => {
             into valued customers.
           </p>
 
-          <Link href="mailto:ndukacosmas1@gmail.com">
-            <button className="w-fit mt-3 hover:text-primary font-bold relative before:absolute before:w-[100px] before:h-[1px] before:bg-primary before:top-[50%]  before:translate-y-[-50%] before:left-[70px] ">
-              Hire me{" "}
+          <Link href="/victor-resume.pdf">
+            <button className="w-fit mt-3 hover:text-primary font-bold relative before:absolute before:w-[100px] before:h-[1px] before:bg-primary before:top-[50%]  before:translate-y-[-50%] before:left-[100px] ">
+              My Resume{" "}
             </button>
           </Link>
         </div>
