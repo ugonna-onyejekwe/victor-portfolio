@@ -44,7 +44,7 @@ export const projects = [
   {
     id: 839e930,
     name: "Gabber",
-    image: "/pro7.jpg",
+    image: "/pro7.png",
     desc: "is an e-commerce mobile app which makes users easy to purchase item. got delivery at there door staps.",
   },
 ];
