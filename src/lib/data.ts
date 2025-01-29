@@ -23,7 +23,7 @@ export const projects = [
   {
     id: 38394,
     name: "Krypto - website design",
-    image: "/pro4A.png",
+    image: "/pro4.png",
 
     desc: "Krypto is designed for users to get more enlighten in crypto world.",
   },
@@ -40,6 +40,12 @@ export const projects = [
     image: "/pro6.png",
 
     desc: "Is a Nike shoe website concept, designed a  revolutionary new Nike shoe concept that combines innovative materials, sustainable design, and cutting-edge technology to create a game-changing athletic shoe.",
+  },
+  {
+    id: 839e930,
+    name: "Gabber",
+    image: "/pro7.jpg",
+    desc: "is an e-commerce mobile app which makes users easy to purchase item. got delivery at there door staps.",
   },
 ];
 
